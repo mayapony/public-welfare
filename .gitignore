@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 node_modules
 node_cache
@@ -22,3 +23,10 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+=======
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+>>>>>>> d59118829abb8dfe2d148b84e34310ba736cf880
