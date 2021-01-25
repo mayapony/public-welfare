@@ -51,9 +51,9 @@ export default {
 };
 </script>
 
-<style scoped>
-@import url("../assets/css/home/toption.css");
-.test {
-  margin-bottom: 500px;
+<style>
+#home {
+  background-color: #f9f9f9;
+  padding-bottom: 200px;
 }
 </style>
