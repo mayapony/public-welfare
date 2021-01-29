@@ -11,10 +11,10 @@
 
 <script>
 export default {
-  props: ["images"],
-};
+  props: ['images'],
+}
 </script>
 
-<style>
-@import url("../../assets/css/home/banner.css");
+<style scoped>
+@import url('../../assets/css/home/banner.css');
 </style>

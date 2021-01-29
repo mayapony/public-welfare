@@ -14,21 +14,21 @@ import OnlineInquire from '@/components/inquire/OnlineInquire'
 import BankInquire from '@/components/inquire/BankInquire'
 import ConditionInquire from '@/components/inquire/ConditionInquire'
 export default {
-  name: "inquire",
+  name: 'inquire',
   components: { OnlineInquire, BankInquire, ConditionInquire },
   props: [],
   data() {
-    return {};
+    return {}
   },
   computed: {},
   watch: {},
   created() {},
   mounted() {},
   methods: {},
-};
+}
 </script>
 
-<style>
+<style scoped>
 .form_card {
   width: 85%;
   margin: 0 auto;

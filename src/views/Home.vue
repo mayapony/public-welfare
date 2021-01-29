@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import HomeBanner from "@/components/home/HomeBanner";
-import HomeOption from "@/components/home/HomeOption";
+import HomeBanner from '@/components/home/HomeBanner'
+import HomeOption from '@/components/home/HomeOption'
 export default {
-  name: "home",
+  name: 'home',
   components: {
     HomeBanner,
     HomeOption,
@@ -29,31 +29,31 @@ export default {
   data() {
     return {
       images: [],
-    };
+    }
   },
   methods: {
     getImages() {
-      let requireModule = require.context("../assets/img", false, /\.jpg$/);
-      let images = [];
+      let requireModule = require.context('../assets/img', false, /\.jpg$/)
+      let images = []
       for (var i = 0; i < requireModule.keys().length; i++) {
         images.push(
-          require("../assets/img/" +
+          require('../assets/img/' +
             requireModule.keys()[i].substr(2, requireModule.keys()[i].length))
-        );
+        )
       }
-      console.info(images);
-      return images;
+      console.info(images)
+      return images
     },
   },
   created() {
-    this.images = this.getImages();
+    this.images = this.getImages()
   },
-};
+}
 </script>
 
-<style>
+<style scoped>
 #home {
   background-color: #f9f9f9;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
 }
 </style>
