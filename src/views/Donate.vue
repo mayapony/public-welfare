@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .form-card {
   width: 85%;
   margin: 0 auto;

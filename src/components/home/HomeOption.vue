@@ -11,11 +11,11 @@
       </el-tab-pane>
       <el-tab-pane name="project">
         <span slot="label"><span class="option">公益项目</span></span>
-        <project-option></project-option>
+        <project-option />
       </el-tab-pane>
       <el-tab-pane name="footprint">
         <span slot="label"><span class="option">天使足迹</span></span>
-        <echarts></echarts>
+        <footprint-option />
       </el-tab-pane>
       <el-tab-pane name="image">
         <span slot="label"><span class="option">天使影像</span></span>
@@ -33,14 +33,14 @@
 import NoticeOption from '@/components/home/options/NoticeOption'
 import RecordOption from '@/components/home/options/RecordOption'
 import ProjectOption from '@/components/home/options/ProjectOption'
-import Echarts from '@/components/Echarts'
+import FootprintOption from '@/components/home/options/FootprintOption'
 export default {
   name: 'home-option',
   components: {
     NoticeOption,
     RecordOption,
     ProjectOption,
-    Echarts,
+    FootprintOption,
   },
   data() {
     return {
