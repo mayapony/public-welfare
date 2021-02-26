@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Echarts from '@/components/Echarts'
+import Echarts from '@/components/echarts/Echarts'
 
 export default {
   name: 'footprint-option',

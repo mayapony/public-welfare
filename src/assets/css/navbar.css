@@ -59,7 +59,7 @@ a {
   color: #3c4250;
 }
 .navbar .navbar-header > a span {
-  color: #66f;
+  color: #ec4646;
 }
 .navbar .navbar-header h4 {
   font-weight: 500;
@@ -86,10 +86,10 @@ a {
   padding: 0.5rem 1rem;
 }
 .navbar .navbar-menu .navbar-nav > li > a:hover {
-  color: #66f;
+  color: #ec4646;
 }
 .navbar .navbar-menu .navbar-nav > li.active a {
-  color: #66f;
+  color: #ec4646;
 }
 .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
   list-style: none;

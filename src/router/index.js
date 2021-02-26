@@ -6,19 +6,21 @@ import Login from '../views/Login'
 import Register from '@/views/Register'
 import Inquire from '@/views/Inquire'
 import Donate from '@/views/Donate'
+import SeekHelp from '@/views/SeekHelp'
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', redirect: '/home' },
-  { path: '/home', name: 'Home', component: Home, meta: { title: '首页' }},
+  { path: '/home', name: 'Home', component: Home, meta: { title: '首页' } },
   // =========用户登录、注册、找回密码==========
   { path: '/login', name: 'Login', component: Login, meta: { title: '登录' } },
   { path: '/register', name: 'Register', component: Register, meta: { title: '注册' } },
 
-  // =================查询、捐赠==================
+  // =================查询、捐赠、求助==================
   { path: '/inquire', name: 'Inquire', component: Inquire, meta: { title: '查询' } },
   { path: '/donate', name: 'Donate', component: Donate, meta: { title: '我要捐赠' } },
+  { path: '/seekhelp', name: 'SeekHelp', component: SeekHelp, meta: { title: '我要求助' } },
 ]
 
 const router = new VueRouter({

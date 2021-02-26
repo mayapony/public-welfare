@@ -17,9 +17,9 @@
         <span slot="label"><span class="option">天使足迹</span></span>
         <footprint-option />
       </el-tab-pane>
-      <el-tab-pane name="image">
+      <el-tab-pane name="angel-image">
         <span slot="label"><span class="option">天使影像</span></span>
-        天使影像
+        <angel-image />
       </el-tab-pane>
       <el-tab-pane name="more">
         <span slot="label"><span class="option last">更多信息</span></span>
@@ -34,6 +34,7 @@ import NoticeOption from '@/components/home/options/NoticeOption'
 import RecordOption from '@/components/home/options/RecordOption'
 import ProjectOption from '@/components/home/options/ProjectOption'
 import FootprintOption from '@/components/home/options/FootprintOption'
+import AngelImage from '@/components/home/options/AngelImage'
 export default {
   name: 'home-option',
   components: {
@@ -41,6 +42,7 @@ export default {
     RecordOption,
     ProjectOption,
     FootprintOption,
+    AngelImage,
   },
   data() {
     return {

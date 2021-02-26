@@ -7,7 +7,7 @@ import echarts from 'echarts'
 import 'echarts/map/js/china'
 import 'echarts/extension/bmap/bmap'
 import loadBMap from './load'
-import option from '../../public/data'
+import option from '@/assets/js/data'
 export default {
   name: 'echarts',
   data() {
