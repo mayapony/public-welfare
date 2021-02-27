@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav-bar v-if="$route.path != '/admin'"></nav-bar>
+    <nav-bar v-if="$route.path.indexOf('/admin') == -1"></nav-bar>
     <router-view />
     <el-backtop></el-backtop>
   </div>

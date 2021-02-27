@@ -8,6 +8,14 @@ import Inquire from '@/views/Inquire'
 import Donate from '@/views/Donate'
 import SeekHelp from '@/views/SeekHelp'
 
+// ============ admin ==============
+import DashBoard from '@/views/admin/DashBoard'
+import Admin from '@/views/admin/index'
+import Edit from '@/views/admin/Edit'
+import Drafts from '@/views/admin/Drafts'
+import Manuscript from '@/views/admin/Manuscript'
+import Slideshow from '@/views/admin/Slideshow'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,6 +29,20 @@ const routes = [
   { path: '/inquire', name: 'Inquire', component: Inquire, meta: { title: '查询' } },
   { path: '/donate', name: 'Donate', component: Donate, meta: { title: '我要捐赠' } },
   { path: '/seekhelp', name: 'SeekHelp', component: SeekHelp, meta: { title: '我要求助' } },
+
+  // ================= 管理员 =========================
+  {
+    path: '/admin',
+    component: Admin,
+    redirect: '/admin/slideshow',
+    children: [
+      { path: '/admin/slideshow', name: 'Slideshow', component: Slideshow, meta: { title: '轮播图切换' } },
+      { path: '/admin/edit', name: 'edit', component: Edit, meta: { title: '编辑' } },
+      { path: '/admin/drafts', name: 'drafts', component: Drafts, meta: { title: '草稿箱' } },
+      { path: '/admin/manuscript', name: 'manuscript', component: Manuscript, meta: { title: '原稿替换' } },
+    ],
+  },
+  { path: '/admin/home', name: 'DashBoard', component: DashBoard, meta: { title: '仪表盘' } },
 ]
 
 const router = new VueRouter({
