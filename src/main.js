@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import VueBMap from 'vue-bmap-gl'
+import BMap from 'vue-bmap-gl'
 import 'vue-bmap-gl/dist/style.css'
 import ElementUI from 'element-ui'
 import '@/assets/css/element-#EC4646/index.css'
@@ -15,8 +15,8 @@ import 'echarts/extension-src/bmap/bmap'
 Vue.prototype.$echarts = echarts
 
 Vue.use(ElementUI)
-Vue.use(VueBMap)
-VueBMap.initBMapApiLoader({
+Vue.use(BMap)
+BMap.initBMapApiLoader({
   // 百度的key
   ak: '3tCmxvp72Y4nu56BjwawIKisQ7jrPCyM',
   // 百度 sdk 版本，默认为 1.0
