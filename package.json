@@ -33,5 +33,13 @@
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/mayapony/public_welfare"
+  },
+  "author": "maya",
+  "license": "ISC"
 }
