@@ -74,7 +74,7 @@ export default {
   padding-left: 20px;
   padding-top: 20px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .card {
